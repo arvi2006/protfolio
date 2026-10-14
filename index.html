@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arvind M | QA Engineer & Python Developer</title>
+<meta name="description" content="Portfolio of Arvind M: software QA, Python development and machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F9; --surface:#FFFFFF; --ink:#0F1B2D; --muted:#55657A;
+  --line:#D5DDE6; --blue:#2F5BEA; --pass:#17835A; --pass-bg:#E3F4EC;
+  --head:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0C1422;--surface:#142033;--ink:#E8EEF6;--muted:#9AABC0;--line:#243350;--blue:#7C9BFF;--pass:#4CD39A;--pass-bg:#12332A}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font:800 1.1rem var(--head)}
+nav ul{list-style:none;display:flex;gap:22px;padding:0}
+nav ul a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+nav ul a:hover{color:var(--ink)}
+.hero{padding:88px 0 72px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+h1{font:800 clamp(2.6rem,6vw,4.4rem)/1.02 var(--head);letter-spacing:-.03em}
+.role{font:500 1.25rem var(--head);color:var(--blue);margin:14px 0 18px}
+.hero p.lead{color:var(--muted);max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-2px);transition:transform .15s}
+.run{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 10px 30px rgba(15,27,45,.08)}
+.run h2{font:700 1rem var(--head);display:flex;justify-content:space-between;margin-bottom:14px}
+.run h2 span{color:var(--pass);background:var(--pass-bg);padding:2px 10px;border-radius:99px;font-size:.85rem}
+.run ul{list-style:none;padding:0}
+.run li{display:flex;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:.95rem;opacity:0}
+.run li::before{content:"✓";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--pass);color:#fff;font-size:.75rem;flex:none}
+.run li.on{opacity:1;transition:opacity .3s}
+.run small{display:block;margin-top:12px;color:var(--muted)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2.title{font:800 2rem var(--head);letter-spacing:-.02em;margin-bottom:28px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border:0}
+.when{color:var(--muted);font-size:.92rem}
+.job h3{font:700 1.2rem var(--head)}
+.job .org{color:var(--blue);font-weight:500;margin-bottom:10px}
+.job ul{padding-left:18px;color:var(--muted)}
+.job li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column}
+.card.big{grid-column:1/-1;border-left:5px solid var(--blue)}
+.card h3{font:700 1.2rem var(--head);margin-bottom:8px}
+.card p,.card li{color:var(--muted);font-size:.96rem}
+.card ul{padding-left:18px;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:auto 0 14px}
+.tags span{background:var(--bg);border:1px solid var(--line);padding:2px 10px;border-radius:99px;font-size:.82rem}
+.card a{font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.skills h3{font:700 1rem var(--head);margin-bottom:10px}
+.skills div div{display:flex;flex-wrap:wrap;gap:6px}
+.skills span{background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:99px;font-size:.9rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.two h3{font:700 1.1rem var(--head)}
+.two p{color:var(--muted)}
+.two ul{padding-left:18px;color:var(--muted)}
+.contact{text-align:center}
+.contact p{color:var(--muted);margin-bottom:24px}
+.contact .btns{justify-content:center}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:56px}
+  .job,.two{grid-template-columns:1fr;gap:8px}
+  nav ul{gap:14px}nav ul li:nth-child(n+4){display:none}
+}
+@media(prefers-reduced-motion:reduce){.run li{opacity:1}html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Arvind M</b>
+<ul><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1>Arvind M</h1>
+    <p class="role">QA engineer who also writes Python and builds ML</p>
+    <p class="lead">I'm an Electronics and Communication Engineering student at Kumaraguru College of Technology. I test sports technology software at Stats Perform, and I build data and machine learning projects that I can explain and defend.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="mailto:arvind.23ec@kct.ac.in">Email me</a>
+    </div>
+  </div>
+  <aside class="run" aria-label="Skills test run">
+    <h2>Arvind.run() <span>All passing</span></h2>
+    <ul id="checks">
+      <li>Manual and functional testing</li>
+      <li>Regression testing with Playwright</li>
+      <li>Defect tracking in Jira</li>
+      <li>Deployment checks with Argo CD and Nexus</li>
+      <li>Python and machine learning</li>
+      <li>Docker and pytest</li>
+    </ul>
+    <small>6 of 6 checks passed</small>
+  </aside>
+</div>
+
+<section id="experience"><div class="wrap">
+  <h2 class="title">Experience</h2>
+  <div class="job">
+    <div class="when">June 2026 to present<br>Remote, India</div>
+    <div><h3>Quality Assurance Intelligence Intern</h3><div class="org">Stats Perform</div>
+      <ul>
+        <li>Run manual and functional tests on sports technology applications and validate new features.</li>
+        <li>Find, report and track defects in Jira, and use Confluence for project documentation.</li>
+        <li>Support deployment validation with Argo CD and Nexus, and verify access through LDAP.</li>
+        <li>Write end-to-end and regression tests with Playwright, working with developers in an Agile team.</li>
+      </ul></div>
+  </div>
+  <div class="job">
+    <div class="when">June to July 2025<br>Remote, India</div>
+    <div><h3>AI and Data Analytics Intern</h3><div class="org">Edunet Foundation</div>
+      <ul>
+        <li>Preprocessed real-world datasets in Python and did feature engineering and exploratory analysis.</li>
+        <li>Built machine learning models and evaluated them with R² and RMSE.</li>
+        <li>Created data visualizations to communicate findings.</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2 class="title">Projects</h2>
+  <div class="grid">
+    <article class="card big">
+      <h3>AI Finance Controller</h3>
+      <p>A reconciliation system that matches 500 invoices against 564 bank transactions (synthetic data) and flags amount mismatches, split payments, duplicates, timing differences and missing payments.</p>
+      <ul style="margin-top:12px">
+        <li>Deterministic matcher with normalization, date windows and confidence scoring.</li>
+        <li>Bounded local LLM (Ollama) reviews ambiguous cases; failures go to human review.</li>
+        <li>Risk-ranked exceptions (P0 to P4), accuracy, precision, recall and F1 against ground truth, and 7, 14 and 30-day cash forecasts.</li>
+        <li>Six-view Streamlit dashboard, pytest suite with mocked LLM calls, and Docker Compose for staging and production.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span><span>Ollama</span><span>Pytest</span><span>Docker</span></div>
+      <a href="#" data-repo>View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>CO₂ Emission Prediction</h3>
+      <p>End-to-end machine learning pipeline using Random Forest Regression, with preprocessing, outlier removal, EDA and heatmap, pair plot and trend visuals. Evaluated with R² and RMSE.</p>
+      <div class="tags" style="margin-top:14px"><span>Python</span><span>Scikit-learn</span><span>Seaborn</span><span>Colab</span></div>
+      <a href="#" data-repo>View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Console Snake Game</h3>
+      <p>Real-time terminal Snake game in C++ with WASD controls, a continuous game loop, random fruit spawning, tail growth, scoring, wall-wrapping and collision detection in a modular structure.</p>
+      <div class="tags" style="margin-top:14px"><span>C++</span><span>Windows Console API</span></div>
+      <a href="#" data-repo>View on GitHub</a>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="title">Skills</h2>
+  <div class="skills">
+    <div><h3>Testing and tools</h3><div><span>Manual testing</span><span>Functional testing</span><span>Regression testing</span><span>Jira</span><span>Confluence</span><span>Playwright</span><span>Argo CD</span><span>Nexus</span><span>LDAP</span></div></div>
+    <div><h3>Programming</h3><div><span>Python</span><span>C++</span><span>SQL</span><span>OOP</span><span>DSA</span><span>DBMS</span><span>Operating systems</span></div></div>
+    <div><h3>Data and ML</h3><div><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Jupyter</span><span>Power BI (basics)</span><span>UiPath RPA (basics)</span></div></div>
+    <div><h3>Engineering</h3><div><span>Git</span><span>GitHub</span><span>Docker</span><span>Pytest</span><span>Streamlit</span><span>Ollama</span></div></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap two">
+  <div><h2 class="title">Education</h2>
+    <h3>B.E. Electronics and Communication Engineering</h3>
+    <p>Kumaraguru College of Technology<br>2023 to 2027 | CGPA 8.53</p></div>
+  <div><h2 class="title">Certifications</h2>
+    <ul><li>IBM Basics of Quantum Information</li><li>IBM Variational Algorithm Design</li><li>IBM SkillsBuild: Artificial Intelligence Fundamentals</li><li>Coursera: Get Started with Figma Project</li></ul></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2 class="title">Let's work together</h2>
+  <p>I'm looking for QA, software testing and Python roles. Send me a message and I'll reply.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:arvind.23ec@kct.ac.in">arvind.23ec@kct.ac.in</a>
+    <a class="btn" href="tel:+916383905114">+91 63839 05114</a>
+    <a class="btn" href="#" id="li">LinkedIn</a>
+    <a class="btn" href="#" id="gh">GitHub</a>
+  </div>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> Arvind M</footer>
+
+<script>
+// 1) EDIT THESE LINKS
+var LINKEDIN="https://linkedin.com/in/m-arvind";
+var GITHUB="https://github.com/arvi2006";
+var REPOS=[GITHUB+"/AI-Finance-Controller",GITHUB+"/AICTE-CO2-Emission-Prediction",GITHUB+"/snakes"];
+
+document.getElementById('li').href=LINKEDIN;
+document.getElementById('gh').href=GITHUB;
+document.querySelectorAll('[data-repo]').forEach(function(a,i){a.href=REPOS[i]});
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('#checks li').forEach(function(li,i){setTimeout(function(){li.classList.add('on')},500+i*350)});
+</script>
+</body>
+</html>
